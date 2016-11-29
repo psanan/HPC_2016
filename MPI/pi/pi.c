@@ -57,7 +57,7 @@ int main(int argc, char* argv[])
         {
 		double sum = 0.0;
 		MPI_ERR_CHECK(MPI_Reduce(&psum, &sum, 1, MPI_DOUBLE, MPI_SUM, 0, MPI_COMM_WORLD));
-		double pi = w * sum;
+		pi = w * sum;
 //		printf("Calculated pi = %24.16g on %d MPI processors in %f secs\n", pi, size, finish - start);
         }
         else
